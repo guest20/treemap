@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B4817E2919953D9900736DBB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4817E2819953D9900736DBB /* Cocoa.framework */; };
+		B4817E3319953D9900736DBB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B4817E3119953D9900736DBB /* InfoPlist.strings */; };
+		B4817E3519953D9900736DBB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4817E3419953D9900736DBB /* main.m */; };
+		B4817E3919953D9900736DBB /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B4817E3719953D9900736DBB /* Credits.rtf */; };
+		B4817E3C19953D9900736DBB /* MDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4817E3B19953D9900736DBB /* MDAppDelegate.m */; };
+		B4817E3F19953D9900736DBB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4817E3D19953D9900736DBB /* MainMenu.xib */; };
+		B4817E4119953D9900736DBB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4817E4019953D9900736DBB /* Images.xcassets */; };
+		B4817E4819953D9900736DBB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4817E4719953D9900736DBB /* XCTest.framework */; };
+		B4817E4919953D9900736DBB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4817E2819953D9900736DBB /* Cocoa.framework */; };
+		B4817E5119953D9900736DBB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B4817E4F19953D9900736DBB /* InfoPlist.strings */; };
+		B4817E5319953D9900736DBB /* TreemapingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4817E5219953D9900736DBB /* TreemapingTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B4817E4A19953D9900736DBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4817E1D19953D9900736DBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4817E2419953D9900736DBB;
+			remoteInfo = Treemaping;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B4817E2519953D9900736DBB /* Treemaping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Treemaping.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4817E2819953D9900736DBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B4817E2B19953D9900736DBB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		B4817E2C19953D9900736DBB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B4817E2D19953D9900736DBB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B4817E3019953D9900736DBB /* Treemaping-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Treemaping-Info.plist"; sourceTree = "<group>"; };
+		B4817E3219953D9900736DBB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B4817E3419953D9900736DBB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B4817E3619953D9900736DBB /* Treemaping-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Treemaping-Prefix.pch"; sourceTree = "<group>"; };
+		B4817E3819953D9900736DBB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		B4817E3A19953D9900736DBB /* MDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDAppDelegate.h; sourceTree = "<group>"; };
+		B4817E3B19953D9900736DBB /* MDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDAppDelegate.m; sourceTree = "<group>"; };
+		B4817E3E19953D9900736DBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B4817E4019953D9900736DBB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B4817E4619953D9900736DBB /* TreemapingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreemapingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4817E4719953D9900736DBB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B4817E4E19953D9900736DBB /* TreemapingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TreemapingTests-Info.plist"; sourceTree = "<group>"; };
+		B4817E5019953D9900736DBB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B4817E5219953D9900736DBB /* TreemapingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TreemapingTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B4817E2219953D9900736DBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4817E2919953D9900736DBB /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4817E4319953D9900736DBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4817E4919953D9900736DBB /* Cocoa.framework in Frameworks */,
+				B4817E4819953D9900736DBB /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B4817E1C19953D9900736DBB = {
+			isa = PBXGroup;
+			children = (
+				B4817E2E19953D9900736DBB /* Treemaping */,
+				B4817E4C19953D9900736DBB /* TreemapingTests */,
+				B4817E2719953D9900736DBB /* Frameworks */,
+				B4817E2619953D9900736DBB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B4817E2619953D9900736DBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4817E2519953D9900736DBB /* Treemaping.app */,
+				B4817E4619953D9900736DBB /* TreemapingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B4817E2719953D9900736DBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4817E2819953D9900736DBB /* Cocoa.framework */,
+				B4817E4719953D9900736DBB /* XCTest.framework */,
+				B4817E2A19953D9900736DBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B4817E2A19953D9900736DBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4817E2B19953D9900736DBB /* AppKit.framework */,
+				B4817E2C19953D9900736DBB /* CoreData.framework */,
+				B4817E2D19953D9900736DBB /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		B4817E2E19953D9900736DBB /* Treemaping */ = {
+			isa = PBXGroup;
+			children = (
+				B4817E3A19953D9900736DBB /* MDAppDelegate.h */,
+				B4817E3B19953D9900736DBB /* MDAppDelegate.m */,
+				B4817E3D19953D9900736DBB /* MainMenu.xib */,
+				B4817E4019953D9900736DBB /* Images.xcassets */,
+				B4817E2F19953D9900736DBB /* Supporting Files */,
+			);
+			path = Treemaping;
+			sourceTree = "<group>";
+		};
+		B4817E2F19953D9900736DBB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4817E3019953D9900736DBB /* Treemaping-Info.plist */,
+				B4817E3119953D9900736DBB /* InfoPlist.strings */,
+				B4817E3419953D9900736DBB /* main.m */,
+				B4817E3619953D9900736DBB /* Treemaping-Prefix.pch */,
+				B4817E3719953D9900736DBB /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B4817E4C19953D9900736DBB /* TreemapingTests */ = {
+			isa = PBXGroup;
+			children = (
+				B4817E5219953D9900736DBB /* TreemapingTests.m */,
+				B4817E4D19953D9900736DBB /* Supporting Files */,
+			);
+			path = TreemapingTests;
+			sourceTree = "<group>";
+		};
+		B4817E4D19953D9900736DBB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4817E4E19953D9900736DBB /* TreemapingTests-Info.plist */,
+				B4817E4F19953D9900736DBB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B4817E2419953D9900736DBB /* Treemaping */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4817E5619953D9900736DBB /* Build configuration list for PBXNativeTarget "Treemaping" */;
+			buildPhases = (
+				B4817E2119953D9900736DBB /* Sources */,
+				B4817E2219953D9900736DBB /* Frameworks */,
+				B4817E2319953D9900736DBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Treemaping;
+			productName = Treemaping;
+			productReference = B4817E2519953D9900736DBB /* Treemaping.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B4817E4519953D9900736DBB /* TreemapingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4817E5919953D9900736DBB /* Build configuration list for PBXNativeTarget "TreemapingTests" */;
+			buildPhases = (
+				B4817E4219953D9900736DBB /* Sources */,
+				B4817E4319953D9900736DBB /* Frameworks */,
+				B4817E4419953D9900736DBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4817E4B19953D9900736DBB /* PBXTargetDependency */,
+			);
+			name = TreemapingTests;
+			productName = TreemapingTests;
+			productReference = B4817E4619953D9900736DBB /* TreemapingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B4817E1D19953D9900736DBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MD;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = none;
+				TargetAttributes = {
+					B4817E4519953D9900736DBB = {
+						TestTargetID = B4817E2419953D9900736DBB;
+					};
+				};
+			};
+			buildConfigurationList = B4817E2019953D9900736DBB /* Build configuration list for PBXProject "Treemaping" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B4817E1C19953D9900736DBB;
+			productRefGroup = B4817E2619953D9900736DBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B4817E2419953D9900736DBB /* Treemaping */,
+				B4817E4519953D9900736DBB /* TreemapingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B4817E2319953D9900736DBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4817E3319953D9900736DBB /* InfoPlist.strings in Resources */,
+				B4817E4119953D9900736DBB /* Images.xcassets in Resources */,
+				B4817E3919953D9900736DBB /* Credits.rtf in Resources */,
+				B4817E3F19953D9900736DBB /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4817E4419953D9900736DBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4817E5119953D9900736DBB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B4817E2119953D9900736DBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4817E3519953D9900736DBB /* main.m in Sources */,
+				B4817E3C19953D9900736DBB /* MDAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4817E4219953D9900736DBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4817E5319953D9900736DBB /* TreemapingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B4817E4B19953D9900736DBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4817E2419953D9900736DBB /* Treemaping */;
+			targetProxy = B4817E4A19953D9900736DBB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B4817E3119953D9900736DBB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4817E3219953D9900736DBB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B4817E3719953D9900736DBB /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4817E3819953D9900736DBB /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		B4817E3D19953D9900736DBB /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4817E3E19953D9900736DBB /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		B4817E4F19953D9900736DBB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4817E5019953D9900736DBB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B4817E5419953D9900736DBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B4817E5519953D9900736DBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B4817E5719953D9900736DBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Treemaping/Treemaping-Prefix.pch";
+				INFOPLIST_FILE = "Treemaping/Treemaping-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B4817E5819953D9900736DBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Treemaping/Treemaping-Prefix.pch";
+				INFOPLIST_FILE = "Treemaping/Treemaping-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B4817E5A19953D9900736DBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Treemaping.app/Contents/MacOS/Treemaping";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Treemaping/Treemaping-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TreemapingTests/TreemapingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B4817E5B19953D9900736DBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Treemaping.app/Contents/MacOS/Treemaping";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Treemaping/Treemaping-Prefix.pch";
+				INFOPLIST_FILE = "TreemapingTests/TreemapingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B4817E2019953D9900736DBB /* Build configuration list for PBXProject "Treemaping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4817E5419953D9900736DBB /* Debug */,
+				B4817E5519953D9900736DBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4817E5619953D9900736DBB /* Build configuration list for PBXNativeTarget "Treemaping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4817E5719953D9900736DBB /* Debug */,
+				B4817E5819953D9900736DBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B4817E5919953D9900736DBB /* Build configuration list for PBXNativeTarget "TreemapingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4817E5A19953D9900736DBB /* Debug */,
+				B4817E5B19953D9900736DBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B4817E1D19953D9900736DBB /* Project object */;
+}
