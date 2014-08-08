@@ -18,6 +18,7 @@
 		B4817E4919953D9900736DBB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4817E2819953D9900736DBB /* Cocoa.framework */; };
 		B4817E5119953D9900736DBB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B4817E4F19953D9900736DBB /* InfoPlist.strings */; };
 		B4817E5319953D9900736DBB /* TreemapingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4817E5219953D9900736DBB /* TreemapingTests.m */; };
+		B4817E5E19953E1B00736DBB /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = B4817E5D19953E1B00736DBB /* image.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		B4817E4E19953D9900736DBB /* TreemapingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TreemapingTests-Info.plist"; sourceTree = "<group>"; };
 		B4817E5019953D9900736DBB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B4817E5219953D9900736DBB /* TreemapingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TreemapingTests.m; sourceTree = "<group>"; };
+		B4817E5D19953E1B00736DBB /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		B4817E2E19953D9900736DBB /* Treemaping */ = {
 			isa = PBXGroup;
 			children = (
+				B4817E5C19953E1200736DBB /* Images */,
 				B4817E3A19953D9900736DBB /* MDAppDelegate.h */,
 				B4817E3B19953D9900736DBB /* MDAppDelegate.m */,
 				B4817E3D19953D9900736DBB /* MainMenu.xib */,
@@ -152,6 +155,14 @@
 				B4817E4F19953D9900736DBB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B4817E5C19953E1200736DBB /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B4817E5D19953E1B00736DBB /* image.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +246,7 @@
 				B4817E4119953D9900736DBB /* Images.xcassets in Resources */,
 				B4817E3919953D9900736DBB /* Credits.rtf in Resources */,
 				B4817E3F19953D9900736DBB /* MainMenu.xib in Resources */,
+				B4817E5E19953E1B00736DBB /* image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
