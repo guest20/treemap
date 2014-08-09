@@ -19,6 +19,18 @@
 		B4817E5119953D9900736DBB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B4817E4F19953D9900736DBB /* InfoPlist.strings */; };
 		B4817E5319953D9900736DBB /* TreemapingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4817E5219953D9900736DBB /* TreemapingTests.m */; };
 		B4817E5E19953E1B00736DBB /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = B4817E5D19953E1B00736DBB /* image.png */; };
+		B4817E631995420800736DBB /* MCTRTreemapView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4817E621995420800736DBB /* MCTRTreemapView.m */; };
+		B4817E671995426100736DBB /* M13OrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = B4817E661995426100736DBB /* M13OrderedDictionary.m */; };
+		B4817E6B1995439100736DBB /* MCTRMainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B4817E6A1995439100736DBB /* MCTRMainManager.m */; };
+		B4817E6F1995446B00736DBB /* MCTRCompanyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B4817E6E1995446B00736DBB /* MCTRCompanyObject.m */; };
+		B4817E721995448C00736DBB /* MCTRDataStructure.m in Sources */ = {isa = PBXBuildFile; fileRef = B4817E711995448C00736DBB /* MCTRDataStructure.m */; };
+		B4817E791995473C00736DBB /* MCTRSquarifiedTreemapView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4817E781995473C00736DBB /* MCTRSquarifiedTreemapView.m */; };
+		B4817E7C1995474400736DBB /* MCTRStripTreemapView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4817E7B1995474400736DBB /* MCTRStripTreemapView.m */; };
+		B4817E7F1995475100736DBB /* MCTRSplitTreemapView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4817E7E1995475100736DBB /* MCTRSplitTreemapView.m */; };
+		B4817E821995475F00736DBB /* MCTRPivotTreemapView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4817E811995475F00736DBB /* MCTRPivotTreemapView.m */; };
+		B4817E8719954A4400736DBB /* airpollution.csv in Resources */ = {isa = PBXBuildFile; fileRef = B4817E8419954A4400736DBB /* airpollution.csv */; };
+		B4817E8819954A4400736DBB /* trafficflow.csv in Resources */ = {isa = PBXBuildFile; fileRef = B4817E8519954A4400736DBB /* trafficflow.csv */; };
+		B4817E8919954A4400736DBB /* winequality.csv in Resources */ = {isa = PBXBuildFile; fileRef = B4817E8619954A4400736DBB /* winequality.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +64,27 @@
 		B4817E5019953D9900736DBB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B4817E5219953D9900736DBB /* TreemapingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TreemapingTests.m; sourceTree = "<group>"; };
 		B4817E5D19953E1B00736DBB /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
+		B4817E611995420800736DBB /* MCTRTreemapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTRTreemapView.h; sourceTree = "<group>"; };
+		B4817E621995420800736DBB /* MCTRTreemapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTRTreemapView.m; sourceTree = "<group>"; };
+		B4817E651995426100736DBB /* M13OrderedDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13OrderedDictionary.h; sourceTree = "<group>"; };
+		B4817E661995426100736DBB /* M13OrderedDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13OrderedDictionary.m; sourceTree = "<group>"; };
+		B4817E691995439100736DBB /* MCTRMainManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTRMainManager.h; sourceTree = "<group>"; };
+		B4817E6A1995439100736DBB /* MCTRMainManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTRMainManager.m; sourceTree = "<group>"; };
+		B4817E6D1995446B00736DBB /* MCTRCompanyObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTRCompanyObject.h; sourceTree = "<group>"; };
+		B4817E6E1995446B00736DBB /* MCTRCompanyObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTRCompanyObject.m; sourceTree = "<group>"; };
+		B4817E701995448C00736DBB /* MCTRDataStructure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTRDataStructure.h; sourceTree = "<group>"; };
+		B4817E711995448C00736DBB /* MCTRDataStructure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTRDataStructure.m; sourceTree = "<group>"; };
+		B4817E771995473C00736DBB /* MCTRSquarifiedTreemapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTRSquarifiedTreemapView.h; sourceTree = "<group>"; };
+		B4817E781995473C00736DBB /* MCTRSquarifiedTreemapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTRSquarifiedTreemapView.m; sourceTree = "<group>"; };
+		B4817E7A1995474400736DBB /* MCTRStripTreemapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTRStripTreemapView.h; sourceTree = "<group>"; };
+		B4817E7B1995474400736DBB /* MCTRStripTreemapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTRStripTreemapView.m; sourceTree = "<group>"; };
+		B4817E7D1995475100736DBB /* MCTRSplitTreemapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTRSplitTreemapView.h; sourceTree = "<group>"; };
+		B4817E7E1995475100736DBB /* MCTRSplitTreemapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTRSplitTreemapView.m; sourceTree = "<group>"; };
+		B4817E801995475F00736DBB /* MCTRPivotTreemapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTRPivotTreemapView.h; sourceTree = "<group>"; };
+		B4817E811995475F00736DBB /* MCTRPivotTreemapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTRPivotTreemapView.m; sourceTree = "<group>"; };
+		B4817E8419954A4400736DBB /* airpollution.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = airpollution.csv; sourceTree = "<group>"; };
+		B4817E8519954A4400736DBB /* trafficflow.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = trafficflow.csv; sourceTree = "<group>"; };
+		B4817E8619954A4400736DBB /* winequality.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = winequality.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +150,10 @@
 		B4817E2E19953D9900736DBB /* Treemaping */ = {
 			isa = PBXGroup;
 			children = (
+				B4817E8A19954A6400736DBB /* MainView */,
+				B4817E681995437F00736DBB /* DataManager */,
+				B4817E641995422A00736DBB /* OrderedDictionary */,
+				B4817E5F1995418800736DBB /* Algorithms */,
 				B4817E5C19953E1200736DBB /* Images */,
 				B4817E3A19953D9900736DBB /* MDAppDelegate.h */,
 				B4817E3B19953D9900736DBB /* MDAppDelegate.m */,
@@ -163,6 +200,111 @@
 				B4817E5D19953E1B00736DBB /* image.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		B4817E5F1995418800736DBB /* Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				B4817E6C1995444E00736DBB /* ObjectRepresent */,
+				B4817E60199541F200736DBB /* SliceAndDice */,
+				B4817E73199546AE00736DBB /* Squarified */,
+				B4817E74199546C300736DBB /* Strip */,
+				B4817E75199546CA00736DBB /* Split */,
+				B4817E76199546D000736DBB /* Pivot by middle */,
+			);
+			name = Algorithms;
+			sourceTree = "<group>";
+		};
+		B4817E60199541F200736DBB /* SliceAndDice */ = {
+			isa = PBXGroup;
+			children = (
+				B4817E611995420800736DBB /* MCTRTreemapView.h */,
+				B4817E621995420800736DBB /* MCTRTreemapView.m */,
+			);
+			name = SliceAndDice;
+			sourceTree = "<group>";
+		};
+		B4817E641995422A00736DBB /* OrderedDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				B4817E651995426100736DBB /* M13OrderedDictionary.h */,
+				B4817E661995426100736DBB /* M13OrderedDictionary.m */,
+			);
+			name = OrderedDictionary;
+			sourceTree = "<group>";
+		};
+		B4817E681995437F00736DBB /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				B4817E8319954A2700736DBB /* DefaultDataFiles */,
+				B4817E701995448C00736DBB /* MCTRDataStructure.h */,
+				B4817E711995448C00736DBB /* MCTRDataStructure.m */,
+				B4817E691995439100736DBB /* MCTRMainManager.h */,
+				B4817E6A1995439100736DBB /* MCTRMainManager.m */,
+			);
+			name = DataManager;
+			sourceTree = "<group>";
+		};
+		B4817E6C1995444E00736DBB /* ObjectRepresent */ = {
+			isa = PBXGroup;
+			children = (
+				B4817E6D1995446B00736DBB /* MCTRCompanyObject.h */,
+				B4817E6E1995446B00736DBB /* MCTRCompanyObject.m */,
+			);
+			name = ObjectRepresent;
+			sourceTree = "<group>";
+		};
+		B4817E73199546AE00736DBB /* Squarified */ = {
+			isa = PBXGroup;
+			children = (
+				B4817E771995473C00736DBB /* MCTRSquarifiedTreemapView.h */,
+				B4817E781995473C00736DBB /* MCTRSquarifiedTreemapView.m */,
+			);
+			name = Squarified;
+			sourceTree = "<group>";
+		};
+		B4817E74199546C300736DBB /* Strip */ = {
+			isa = PBXGroup;
+			children = (
+				B4817E7A1995474400736DBB /* MCTRStripTreemapView.h */,
+				B4817E7B1995474400736DBB /* MCTRStripTreemapView.m */,
+			);
+			name = Strip;
+			sourceTree = "<group>";
+		};
+		B4817E75199546CA00736DBB /* Split */ = {
+			isa = PBXGroup;
+			children = (
+				B4817E7D1995475100736DBB /* MCTRSplitTreemapView.h */,
+				B4817E7E1995475100736DBB /* MCTRSplitTreemapView.m */,
+			);
+			name = Split;
+			sourceTree = "<group>";
+		};
+		B4817E76199546D000736DBB /* Pivot by middle */ = {
+			isa = PBXGroup;
+			children = (
+				B4817E801995475F00736DBB /* MCTRPivotTreemapView.h */,
+				B4817E811995475F00736DBB /* MCTRPivotTreemapView.m */,
+			);
+			name = "Pivot by middle";
+			sourceTree = "<group>";
+		};
+		B4817E8319954A2700736DBB /* DefaultDataFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B4817E8419954A4400736DBB /* airpollution.csv */,
+				B4817E8519954A4400736DBB /* trafficflow.csv */,
+				B4817E8619954A4400736DBB /* winequality.csv */,
+			);
+			name = DefaultDataFiles;
+			sourceTree = "<group>";
+		};
+		B4817E8A19954A6400736DBB /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MainView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,9 +386,12 @@
 			files = (
 				B4817E3319953D9900736DBB /* InfoPlist.strings in Resources */,
 				B4817E4119953D9900736DBB /* Images.xcassets in Resources */,
+				B4817E8719954A4400736DBB /* airpollution.csv in Resources */,
 				B4817E3919953D9900736DBB /* Credits.rtf in Resources */,
 				B4817E3F19953D9900736DBB /* MainMenu.xib in Resources */,
+				B4817E8919954A4400736DBB /* winequality.csv in Resources */,
 				B4817E5E19953E1B00736DBB /* image.png in Resources */,
+				B4817E8819954A4400736DBB /* trafficflow.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +411,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4817E3519953D9900736DBB /* main.m in Sources */,
+				B4817E671995426100736DBB /* M13OrderedDictionary.m in Sources */,
+				B4817E7C1995474400736DBB /* MCTRStripTreemapView.m in Sources */,
+				B4817E791995473C00736DBB /* MCTRSquarifiedTreemapView.m in Sources */,
+				B4817E721995448C00736DBB /* MCTRDataStructure.m in Sources */,
+				B4817E631995420800736DBB /* MCTRTreemapView.m in Sources */,
+				B4817E821995475F00736DBB /* MCTRPivotTreemapView.m in Sources */,
+				B4817E7F1995475100736DBB /* MCTRSplitTreemapView.m in Sources */,
 				B4817E3C19953D9900736DBB /* MDAppDelegate.m in Sources */,
+				B4817E6F1995446B00736DBB /* MCTRCompanyObject.m in Sources */,
+				B4817E6B1995439100736DBB /* MCTRMainManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

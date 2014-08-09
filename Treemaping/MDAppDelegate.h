@@ -7,9 +7,13 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "MCTRTreemapView.h"
 
 @interface MDAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (nonatomic,strong)  MCTRTreemapView *treemapView;
+@property (weak) IBOutlet NSPopUpButtonCell *listViewWithAlgorithms;
+@property (weak) IBOutlet NSTextField *textFieldWithDataPath;
 
 @end
