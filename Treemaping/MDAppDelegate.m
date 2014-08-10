@@ -29,7 +29,7 @@
     
     if (clicked == NSFileHandlingPanelOKButton) {
         for (NSURL *url in [panel URLs]) {
-            self.textFieldWithDataPath.stringValue = [url absoluteString];
+            self.textFieldWithDataPath.stringValue = url.path;
         }
     }
 }

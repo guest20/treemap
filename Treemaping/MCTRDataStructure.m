@@ -51,7 +51,10 @@
     NSString *content =  [NSString stringWithContentsOfFile:filepath encoding:NSUTF8StringEncoding error:nil];
     if (!content)
     {
-        [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
+        if([[NSFileManager defaultManager] fileExistsAtPath:filePath])
+        {
+            content = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
+        }
     }
     NSArray *arrayfarm = [content componentsSeparatedByString:@"\n"];
     for (NSString *item in arrayfarm) {
@@ -80,6 +83,13 @@
     M13MutableOrderedDictionary *dictioWithFlow = [[M13MutableOrderedDictionary alloc] init];
     NSString *filepath = [[NSBundle mainBundle] pathForResource:filePath ofType:@"csv"];
     NSString *content =  [NSString stringWithContentsOfFile:filepath  encoding:NSUTF8StringEncoding error:nil];
+    if (!content)
+    {
+        if([[NSFileManager defaultManager] fileExistsAtPath:filePath])
+        {
+            content = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
+        }
+    }
     NSArray *arrayfarm = [content componentsSeparatedByString:@"\n"];
     NSArray *arrayOfTitles;
     for (NSString *item in arrayfarm) {
@@ -90,16 +100,29 @@
         else
         {
             NSArray *itemArray = [item componentsSeparatedByString:@","];
-            M13MutableOrderedDictionary *secondDimDictio = [[M13MutableOrderedDictionary alloc] init];
-            NSString *key = [[itemArray objectAtIndex:0] stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceAndNewlineCharacterSet]];
-            for (int i=1; i<itemArray.count; i++) {
-                NSString *object =[[itemArray objectAtIndex:i] stringByTrimmingCharactersInSet:
-                                   [NSCharacterSet whitespaceAndNewlineCharacterSet]];
-                CGFloat val = [object floatValue];
-                NSString *secondKey = [arrayOfTitles objectAtIndex:i];
-                [secondDimDictio setObject:[NSNumber numberWithFloat:val] forKey:secondKey];
+            if (itemArray.count == 2){
+                NSString *object = [[itemArray objectAtIndex:1] stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceAndNewlineCharacterSet]];
+                NSString *key = [[itemArray objectAtIndex:0] stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceAndNewlineCharacterSet]];
+                if (key.length > 0 && object.length > 0){
+                    CGFloat val = [object floatValue];
+                    if (val){
+                        [dictioWithFlow setObject:[NSNumber numberWithFloat:val] forKey:key];
+                    }
+                }
             }
-            [dictioWithFlow setObject:secondDimDictio forKey:key];
+            else
+            {
+                M13MutableOrderedDictionary *secondDimDictio = [[M13MutableOrderedDictionary alloc] init];
+                NSString *key = [[itemArray objectAtIndex:0] stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceAndNewlineCharacterSet]];
+                for (int i=1; i<itemArray.count; i++) {
+                    NSString *object =[[itemArray objectAtIndex:i] stringByTrimmingCharactersInSet:
+                                       [NSCharacterSet whitespaceAndNewlineCharacterSet]];
+                    CGFloat val = [object floatValue];
+                    NSString *secondKey = [arrayOfTitles objectAtIndex:i];
+                    [secondDimDictio setObject:[NSNumber numberWithFloat:val] forKey:secondKey];
+                }
+                [dictioWithFlow setObject:secondDimDictio forKey:key];
+            }
         }
     }
     directory = [[M13OrderedDictionary alloc] initWithOrderedDictionary:dictioWithFlow];
@@ -126,7 +149,7 @@
 
 -(M13OrderedDictionary*)customData:(NSString*)filePath{
     M13OrderedDictionary *pollutionData;
-    pollutionData = [self parseOneDimDataFromFileAtPath:filePath];
+    pollutionData = [self parseTwoDimDataFromFileAtPath:filePath];
     return pollutionData;
 }
 
