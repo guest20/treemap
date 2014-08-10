@@ -20,7 +20,6 @@
         self.dictWitValues = [rectsArray mutableCopy];
         self.dictWitRects = [[M13MutableOrderedDictionary alloc] init];
         self.oldVals = [[M13OrderedDictionary alloc] initWithOrderedDictionary:rectsArray copyEntries:YES];
-       //to do - kolor [self setColor:[NSColor clearColor]];
     }
     return self;
 }
@@ -64,14 +63,11 @@
         }
         CGContextAddRect(context, rectangle);
         [self.dictWitRects setObject:[NSValue valueWithRect:NSRectFromCGRect(rectangle)] forKey:ID];
-        
-        NSTextField *label = [[NSTextField alloc] initWithFrame:rectangle];
-        [self setLabelFont:level inLabel:label];
-      //to do  label.text = ID;
-        [self addSubview:label];
         CGContextStrokePath(context);
         if ([object isKindOfClass:[M13MutableOrderedDictionary class]]) {
-            M13OrderedDictionary *dict = [[MCTRMainManager lastMainManager] recountTestDataForDirection:!isVertical andDict:object andArea:self.bounds];
+            M13OrderedDictionary *dict = [[MCTRMainManager lastMainManager] recountTestDataForDirection:!isVertical
+                                                                                                andDict:object
+                                                                                                andArea:self.bounds];
             [self drawOneLevel:[dict mutableCopy] dir:!isVertical inRect:rectangle];
         }
     }];
@@ -94,7 +90,7 @@
     return value;
 }
 
-- (NSInteger) deepOfHierarchy:(M13MutableOrderedDictionary*)dict {
+- (NSInteger) deepOfHierarchy:(M13OrderedDictionary*)dict {
     NSInteger max=0;
     NSInteger temp_depth;
     NSArray *allVal = [dict allObjects];
@@ -109,33 +105,14 @@
     return max+1;
 }
 
-
 - (void) setColor:(NSInteger)level{
+  CGContextRef context =  [[NSGraphicsContext currentContext] graphicsPort];
     switch (level) {
         case 1:
-         //   CGContextSetStrokeColorWithColor(NSGraphicsGetCurrentContext(), [NSColor blackColor].CGColor);
+            CGContextSetStrokeColorWithColor(context, [NSColor blackColor].CGColor);
             break;
         case 2:
-         //   CGContextSetStrokeColorWithColor(UIGraphicsGetCurrentContext(), [NSColor blackColor].CGColor);
-        default:
-            break;
-    }
-}
-
-- (void) setLabelFont:(NSInteger)level inLabel:(NSTextField*)label{
-    switch (level) {
-        case 1:
-        {
-            label.font = [NSFont fontWithName:@"HelveticaNeue-Light" size:15];
-          //to do  label.numberOfLines = 2;
-            [label setTextColor:[NSColor blackColor]];
-        }
-            break;
-        case 2:
-        {
-            label.font = [NSFont fontWithName:@"HelveticaNeue-Bold" size:20];
-            [label setTextColor:[NSColor blackColor]];
-        }
+            CGContextSetStrokeColorWithColor(context, [NSColor blackColor].CGColor);
         default:
             break;
     }

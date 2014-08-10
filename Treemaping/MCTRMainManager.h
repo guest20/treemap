@@ -16,7 +16,6 @@
 
 @property (nonatomic,strong) M13OrderedDictionary *dict;
 
-- (void) downloadSession;
 - (M13OrderedDictionary*) recountTestDataForDirection:(BOOL)isVertical andDict:(M13MutableOrderedDictionary*)dict andArea:(CGRect)area;
 - (M13OrderedDictionary*) generateDataWithHierarchy:(NSInteger)deepOfHierarchy;
 - (M13OrderedDictionary*) changeData:(M13OrderedDictionary*)dataToChange;

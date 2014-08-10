@@ -209,10 +209,6 @@
     CGContextSetLineWidth(context, level);
     [self setColor:level];
     CGContextAddRect(context, rect);
-//    UILabel *label = [[UILabel alloc] initWithFrame:rect];
-//    [self setLabelFont:level inLabel:label];
-//    label.text = title;
-//    [self addSubview:label];
     CGContextStrokePath(context);
 }
 @end

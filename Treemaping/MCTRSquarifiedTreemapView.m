@@ -123,10 +123,6 @@
         CGContextSetLineWidth(context, level);
         [self setColor:level];
         CGContextAddRect(context, rectToDraw);
-//        UILabel *label = [[UILabel alloc] initWithFrame:rectToDraw];
-//        [self setLabelFont:level inLabel:label];
-//        label.text = ID;
-//        [self addSubview:label];
         CGContextStrokePath(context);
         if (!self.dictWitRects) self.dictWitRects = [[M13MutableOrderedDictionary alloc] init];
         [self.dictWitRects setObject:object forKey:ID];

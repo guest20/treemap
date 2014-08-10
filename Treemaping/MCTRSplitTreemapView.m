@@ -123,13 +123,6 @@
     CGContextSetLineWidth(context, level);
     [self setColor:level];
     CGContextAddRect(context, rect);
-//    UILabel *label = [[UILabel alloc] initWithFrame:rect];
-//    label.textAlignment = NSTextAlignmentCenter;
-//    [self setLabelFont:level inLabel:label];
-    M13OrderedDictionary *oldVals = [[MCTRDataStructure sharedData] trafficFlowData];
-    NSNumber *val = [oldVals objectForKey:title];
-//    label.text = [title stringByAppendingString:[NSString stringWithFormat:@" %.01f",[val floatValue]]];
-//    [self addSubview:label];
     CGContextStrokePath(context);
 }
 

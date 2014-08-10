@@ -18,9 +18,8 @@
 @property (strong,nonatomic) M13MutableOrderedDictionary*dictWitRects;
 @property (strong,nonatomic) M13OrderedDictionary *oldVals;
 - (instancetype) initWithFrame:(CGRect)frame andData:(M13OrderedDictionary*)rectsArray;
-- (NSInteger) deepOfHierarchy:(M13MutableOrderedDictionary*)dict;
+- (NSInteger) deepOfHierarchy:(M13OrderedDictionary*)dict;
 - (void) setColor:(NSInteger)level;
-- (void) setLabelFont:(NSInteger)level inLabel:(NSTextField*)label;
 - (CGFloat) recountAreaForDict:(M13MutableOrderedDictionary*)dict value:(CGFloat)value;
 
 - (CGFloat) averageAspectRatio:(M13MutableOrderedDictionary*)dictWitRects;

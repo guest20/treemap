@@ -158,7 +158,6 @@ __weak MCTRMainManager *mainManager;
             [self changeDataInDict:obj saveIn:newDict];
         }
     }
-    
 }
 
 - (CGFloat) recountChangeBetween:(M13OrderedDictionary*)firstDict andDict:(M13OrderedDictionary*)secondDict {
@@ -180,7 +179,7 @@ __weak MCTRMainManager *mainManager;
     double f1 = sqrt(-2 * log(u1));
     double f2 = 2 * M_PI * u2;
     double g1 = f1 * cos(f2); // gaussian distribution
-    double g2 = f1 * sin(f2); // gaussian distribution
+   // double g2 = f1 * sin(f2); // gaussian distribution
     g1 = (CGFloat)g1;
     if (g1<0) g1 = g1*(-1);
     g1 = exp(g1-0.5);

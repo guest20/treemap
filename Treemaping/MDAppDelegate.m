@@ -12,6 +12,7 @@
 #import "MCTRSplitTreemapView.h"
 #import "MCTRStripTreemapView.h"
 #import "MCTRDataStructure.h"
+#import "MCTRMainManager.h"
 
 @implementation MDAppDelegate
 
@@ -54,11 +55,16 @@
         [alert runModal];
         return;
     }
-    
+    M13OrderedDictionary *dataSet = [[MCTRDataStructure sharedData] customData:self.textFieldWithDataPath.stringValue];
+    [self createTreemapWithData:dataSet];
    }
 
-- (void)createTreemapWithData:(M13OrderedDictionary*)data  {
+- (void)createTreemapWithData:(M13OrderedDictionary*)dataSet  {
     NSView *mainView = self.window.contentView;
+    MCTRMainManager *mainManager = [[MCTRMainManager alloc] init];
+    M13OrderedDictionary *data = [mainManager recountTestDataForDirection:NO
+                                                                  andDict:[[M13MutableOrderedDictionary alloc] initWithOrderedDictionary:dataSet]
+                                                                  andArea:mainView.bounds];
     if (self.treemapView)
     {
         [self.treemapView removeFromSuperview];

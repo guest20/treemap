@@ -17,9 +17,7 @@
 -(M13OrderedDictionary*) parseOneDimDataFromFileAtPath:(NSString*)filePath;
 
 -(M13OrderedDictionary*)trafficFlowData;
--(M13OrderedDictionary*)boilersWaterLevelData;
 -(M13OrderedDictionary*)wineQualityData;
 -(M13OrderedDictionary*)airPollutionData;
--(M13OrderedDictionary*)energyGenerationData;
--(M13OrderedDictionary*)presentationData;
+-(M13OrderedDictionary*)customData:(NSString*)filePath;
 @end

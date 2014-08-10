@@ -48,7 +48,11 @@
     
     M13MutableOrderedDictionary *dictioWithFlow = [[M13MutableOrderedDictionary alloc] init];
     NSString *filepath = [[NSBundle mainBundle] pathForResource:filePath ofType:@"csv"];
-    NSString *content =  [NSString stringWithContentsOfFile:filepath  encoding:NSUTF8StringEncoding error:nil];
+    NSString *content =  [NSString stringWithContentsOfFile:filepath encoding:NSUTF8StringEncoding error:nil];
+    if (!content)
+    {
+        [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
+    }
     NSArray *arrayfarm = [content componentsSeparatedByString:@"\n"];
     for (NSString *item in arrayfarm) {
         if ([arrayfarm indexOfObject:item] > 0)
@@ -104,14 +108,8 @@
 
 -(M13OrderedDictionary*)trafficFlowData{
     M13OrderedDictionary *trafficFlowData;
-    trafficFlowData = [self parseOneDimDataFromFileAtPath:@"trem"];
+    trafficFlowData = [self parseOneDimDataFromFileAtPath:@"trafficflow"];
     return trafficFlowData;
-}
-
--(M13OrderedDictionary*)boilersWaterLevelData{
-    M13OrderedDictionary *boilersWaterLevelData;
-    boilersWaterLevelData = [self parseOneDimDataFromFileAtPath:@"kotlypoziom"];
-    return boilersWaterLevelData;
 }
 
 -(M13OrderedDictionary*)wineQualityData{
@@ -124,13 +122,12 @@
     M13OrderedDictionary *pollutionData;
     pollutionData = [self parseTwoDimDataFromFileAtPath:@"airpollution"];
     return pollutionData;
-
 }
 
--(M13OrderedDictionary*)energyGenerationData{
-    M13OrderedDictionary *energyData;
-    energyData = [self parseTwoDimDataFromFileAtPath:@"energygeneration"];
-    return energyData;
-
+-(M13OrderedDictionary*)customData:(NSString*)filePath{
+    M13OrderedDictionary *pollutionData;
+    pollutionData = [self parseOneDimDataFromFileAtPath:filePath];
+    return pollutionData;
 }
+
 @end
