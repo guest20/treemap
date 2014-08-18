@@ -3,7 +3,6 @@
 //  Treemap
 //
 //  Created by Malgorzata Lewandowska on 31/05/14.
-//  Copyright (c) 2014 morriscooke. All rights reserved.
 //
 
 #import "MCTRDataStructure.h"
